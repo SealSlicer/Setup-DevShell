@@ -77,7 +77,7 @@ function Set-VSInstanceForShell($instanceId=$null)
     # Set VS instance
     if($null -eq $instanceId)
     {
-        Write-Host -ForegroundColor Cyan Choose VS instance to patch
+        Write-Host -ForegroundColor Cyan Choose VS instance to use
         Get-VSInstances
         $instance = Read-Host
         Set-VSShelltarget $instance       
